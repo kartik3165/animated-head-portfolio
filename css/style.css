@@ -119,6 +119,7 @@ p {
   transform: rotate(45deg) scale(1.05);
 }
 
+
 /* TOP LEFT CORNER */
 
 #grid__tl__btn {
@@ -175,6 +176,24 @@ article p {
   margin: 0 1rem;
 }
 
+#tl-btn {
+   background-color: var(--bg-alt);
+   padding: 8px;
+   font-weight: 600;
+   text-decoration: none;
+   color: var(--text-alt);
+   border-radius: 50px;
+}
+
+#tl-btn:hover {
+  font-weight: 600;
+  border: 3px solid var(--bg-alt);
+  padding: 8px;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+
 /* TOP RIGHT CORNER */
 
 #grid__tr__btn {
@@ -192,9 +211,11 @@ article p {
 
 .experience {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  align-items: center;
 }
 
 .experience__skill {
@@ -233,6 +254,25 @@ article p {
 .experience__skill div div {
   justify-content: space-between;
 }
+
+#tr-btn {
+  background-color: var(--bg-alt);
+  padding: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-alt);
+  border-radius: 50px;
+  width: 8rem;
+}
+
+#tr-btn:hover {
+ font-weight: 600;
+ border: 3px solid var(--bg-alt);
+ padding: 8px;
+ background-color: var(--bg);
+ color: var(--text);
+}
+
 
 /* BOTTOM LEFT CORNER */
 
@@ -311,6 +351,26 @@ button {
 .btn:hover,
 .arrow:hover {
   cursor: pointer;
+}
+#arrow-btn {
+  margin-bottom: 20px;
+}
+
+#bl-btn {
+  background-color: var(--bg-alt);
+  padding: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-alt);
+  border-radius: 50px;
+}
+
+#bl-btn:hover {
+ font-weight: 600;
+ border: 3px solid var(--bg-alt);
+ padding: 5px;
+ background-color: var(--bg);
+ color: var(--text);
 }
 
 /* BOTTOM RIGHT CORNER */
