@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+}
+
+:root {
+    /* Colors */
+    --bg: #fff;
+    --bg-alt: #333;
+    --bg-alt-2: #f0f0f0;
+    --bg-transparent: #ffffffe8;
+    --border: 0.01rem solid #333;
+    --text: #333;
+    --text-alt: #fff;
+}
+
+body {
+     height: 100vh;
+     width: 100vw;
+     background-color: var(--bg);
+}
+
+.head {
+    padding-top: 15px;
+    text-align: center;
+    color: var(--text);
+}
+
+.head h1 {
+    margin-top: 25px;
+    font-size: 1.9rem;
+}
+
+.project-filter ul {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.project-filter ul li {
+    border: 2px solid var(--text);
+    width: 60px;
+    text-align: center;
+    border-radius: 25px;
+    font-size: .9rem;
+}
+
+.active {
+    background-color: var(--bg-alt);
+    color: var(--text-alt);
+    font-weight: 600;
+}
+
+.project-body {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-list {
+    padding: 15px;
+    display: grid;
+    grid-gap: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;  
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+}
+
+.project-card {
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;   
+} 
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5;
+}
+
+.project-card:hover img {
+    transform: scale(1);
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), var(--bg-alt));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.project-card:hover .layer {
+    height: 100%;
+}
