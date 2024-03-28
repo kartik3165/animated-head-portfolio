@@ -387,3 +387,11 @@ brBtn.onclick = function () {
     tlContent.style.transform = tlHidden;
   }
 };
+
+
+var typed = new Typed('.auto-type', {
+  strings: ['Web developer', 'Video editor' ,'Graphics designer','App Developer(No-Code)'],
+  typeSpeed: 100,
+  backSpeed : 70,
+  loop : true
+});
