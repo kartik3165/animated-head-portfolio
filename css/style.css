@@ -283,6 +283,8 @@ article p {
 }
 
 #grid__bl__content {
+  display: flex;
+  flex-direction: column;
   width: 15rem;
   bottom: 15vh;
   left: 0;
@@ -352,11 +354,13 @@ button {
 .arrow:hover {
   cursor: pointer;
 }
+
 #arrow-btn {
   margin-bottom: 20px;
 }
 
 #bl-btn {
+  margin-top: 10px;
   background-color: var(--bg-alt);
   padding: 5px;
   font-weight: 600;
@@ -401,4 +405,13 @@ button {
 .btn-contact {
   border: var(--border);
   border-radius: 2rem;
+}
+
+/* text animation */
+
+
+
+
+#hero .text-animate .auto-typing {
+  color: #333;
 }

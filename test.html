@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Animation</title>
+<style>
+.text-animate {
+  text-align: center;
+  color: aqua;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+.text-animation {
+  display: none; /* Initially hide all texts */
+}
+
+.text-animate .text-animation:first-child {
+  display: inline-block; /* Show only the first text initially */
+}
+
+@keyframes typing {
+  0% {
+    width: 0; /* Start typing from zero width */
+  }
+  100% {
+    width: 100%; /* Fully display the text */
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="text-animate">
+  <span class="text-animation">Web Developer</span>
+  <span class="text-animation">Graphics Designer</span>
+  <span class="text-animation">Video Editor</span>
+  <span class="text-animation">Software Developer</span>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  let texts = document.querySelectorAll('.text-animation');
+  let index = 0;
+
+  function showText() {
+    if (index < texts.length) {
+      texts[index].style.display = 'inline-block';
+      texts[index].style.animation = 'typing 2s ease-out';
+      index++;
+    } else {
+      clearInterval(interval); // Stop the interval when all texts have been displayed
+    }
+  }
+
+  showText(); // Show the first text immediately
+
+  let interval = setInterval(showText, 3000); // Change every 3 seconds
+});
+</script>
+
+</body>
+</html>

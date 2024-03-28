@@ -18,8 +18,10 @@
   <body>
     <div id="hero">
       <h5>Hello I'm</h5>
-      <h1>Kartik Nagare </h1>
-      <p>Fullstack Developer</p>
+      <h1>Kartik Anil <br> Nagare </h1>
+      <div class="text-animate">
+        <span class="auto-type" ></span> <!-- text animation-->
+      </div>
       <!-- Block, Element, Modifier (BEM) naming convention-->
       <div id="hero__animation">
         <div id="hero__animation__img"></div>
@@ -242,10 +244,9 @@
                 <button class="arrow" onclick="navigateProject(-1)"> &#10094; </button>
                 <button class="arrow" onclick="navigateProject(1)"> &#10095; </button>
               </div>
-              <a id="bl-btn" href="/project.html">Know More</a>
             </div>
-            
           </div>
+        <a id="bl-btn" href="/project.html">Know More</a>
         </div>
       </div>
 
@@ -270,5 +271,22 @@
     <div id="color-mode">
       <div id="toggle-button" class="icon"></div>
     </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      
+
+  var typed = new Typed('.auto-type', {
+      strings: ['Web developer', 'Video editor' ,'Graphics designer','App Developer(No-Code)'],
+      typeSpeed: 100,
+      backSpeed : 70,
+    });
+
+
+    var typed = new Typed (".auto-type", {
+              Strings : [ "", "Software Developer", "Video editor","Graphics designer"],
+              t
+  });
+    
+    </script>
   </body>
 </html>
