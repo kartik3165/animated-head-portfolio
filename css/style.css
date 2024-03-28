@@ -179,14 +179,12 @@ article p {
 #tl-btn {
    background-color: var(--bg-alt);
    padding: 8px;
-   font-weight: 600;
    text-decoration: none;
    color: var(--text-alt);
    border-radius: 50px;
 }
 
 #tl-btn:hover {
-  font-weight: 600;
   border: 3px solid var(--bg-alt);
   padding: 8px;
   background-color: var(--bg);
