@@ -40,17 +40,43 @@ body {
     font-weight: 700;
 }
 
-.head img {
-
-    padding: 8px;
-    margin: 3rem;
-    width: 250px;
-    
-    border-radius: 40px;
-    border: 5px dotted var(--bg-alt);
+.top {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
 }
 
-.content {
+.top i {
+    font-size: 1.5rem;
+    margin-left: 8px;
+    transform: scaleX(1.2);
+}
+
+.top p {
+    width: 100%;
+    font-size: 1.9rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+.head span {
+    font-weight: 650;
+    color: var(--bg-alt);
+}
+
+.head p {
+    font-size: .7rem;
+}
+
+.head img {
+    margin-top: 10px;
+    padding: 8px;
+    width: 150px;
+    border-radius: 100%;
+    /*border: 5px dotted var(--bg-alt);*/
+}
+
+/*.content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -128,4 +154,30 @@ body {
     padding-top: 25px;
     padding-right: 35px;
     height: 120px;
+}*/
+
+.down {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.down h3 {
+    font-weight: 950;
+    font-size: .9rem;
+    color: var(--bg-alt);
+    margin-bottom: 8px;
+}
+
+.main {
+    font-size: .8rem;
+    margin-bottom: 0px;
+    font-size: 900;
+}
+
+.down span {
+    font-size: .8rem;
+    margin-bottom: 10px;
+    height:10px;
+    margin-left: 10px;
 }
